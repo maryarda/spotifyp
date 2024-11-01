@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player</title>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel="stylesheet" href="css/msplayer.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <button class="hdbtn">
+        <a href="projeto-inicial-spotify/index.html"><i class="fi fi-sr-arrow-small-left"></i></a>
+      </button>
+      <h3 class="p-now">Playing now</h3>
+      <button class="hdbtn">
+        <i class="fi fi-sr-list"></i>
+      </button>
+    </header>
+    <div class="player">
+      <div class="img-area">
+        <img src="image/favicon.png" alt="">
+      </div>
+
+      <div class="song-details">
+        <h1 class="name">Animation</h1>
+        <h3 class="artist">Codiging</h3>
+      </div>
+
+      <div class="audioC">
+        <div class="song-timer">
+          <span class="current-timer">0:00</span>
+          <span class="max-duration">0:00</span>
+        </div>
+        <div class="progress-area">
+          <div class="progress-bar">
+            <audio src="" id="main-audio" src="audio/Futuro namorado - Ana Laura Lopes.mp3"></audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btnC" id="prev">
+          <i class="fi fi-sr-rewind"></i>
+        </button>
+        <button class="play-pause btnC">
+          <i class="fi fi-sr-play play"></i>
+        </button>
+        <button class="btnC" id="next">
+          <i class="fi fi-sr-forward"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/music-list.js"></script>
+  <script src="js/msplayer.js"></script>
+
+</body>
+
+</html>
